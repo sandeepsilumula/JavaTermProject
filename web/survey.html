@@ -245,7 +245,7 @@ body{
     -webkit-box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
     box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
     margin-left:12px;
-    
+    float:right;
 	padding:7px 21px;
 }
 
@@ -270,16 +270,15 @@ footer#main{
 	width:100%;
 }
 </style>
-
-<html lang="en">
+<HTML><html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Online Survey Registration</title>
+        <title>Online Survey Form</title>
         <script src="http://code.jquery.com/jquery.min.js"></script>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script>
+           <script>
             $(document).ready(function() {
                 $('#register').click(function() {
                     $.ajax({
@@ -301,28 +300,39 @@ footer#main{
             });
 
         </script>
-    </head>
-    <body>
+        </head>
+
+<body>
     <section class='container'>
             <div class="col-md-8">
-                <h1>Welcome to Online Survey!!!</h1>
-                <form class="form" action="./dologin" method ="get">
-                <h3 >Login Credentials</h3><br>
-                <label class="tab-group">Username</label>
-                <input type="text" id="userid" name="username"/>
-                <small>(e.g. guest)</small>
-                <br><br>
-                <label>Password</label>
-                <input type="password" id="pswrd" name="password"/> 
-                <br><br>
-                <input class="btnLogin" type="submit" value="Login" />
-               
-        </form>
-                <br>
-                <button class="btnLogin"><a href="register.html">New user</a></button>
+                <h1>Online Survey For Lambton College Students!!!</h1>
+                <form>
+                <div class="form-group">
+                    <label for="Q1">Q1.How do feel Studying at Lambton college?</label>
+                    <input type="text" id="Q1" class="form-control"/>
+                    
+                    <label for="Q2">Q2.How is your Experience Studying at Lambton college?</label>
+                    <input type="text" id="Q2" class="form-control"/>
+                    
+                    <label for="Q3">Q3.How Is the Culture at Lambton college?</label>
+                    <input type="email" id="email" class="form-control"/>
+                                        
+                    <label for="Q4">Q4.How Are Internal Students at Lambton college?</label>
+                    <input type="email" id="email" class="form-control"/>
+                    
+                    
+                </div>
+                <button id="submit" class="btnLogin">Submit</button> 
+                
+               <button class="btnLogin" ><a href="index.html"> Back </a></button>
+                </form>
+                
              
             </div>
                       
         </section>
+
+
+
 </body>
-</html>   
+</HTML>
